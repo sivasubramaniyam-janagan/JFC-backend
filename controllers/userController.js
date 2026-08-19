@@ -3,6 +3,7 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import nodemailer from "nodemailer";
 import OTP from "../models/otp.js";
+import axios from "axios";
 
 export function createUser(req, res) {
     const { firstname, lastname, email, password } = req.body;
